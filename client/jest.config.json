@@ -1,0 +1,4 @@
+{
+  "setupFiles": ["./jest.setup.ts"],
+  "testEnvironment": "jsdom"
+}

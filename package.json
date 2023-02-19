@@ -1,0 +1,18 @@
+{
+  "name": "boilerplate",
+  "license": "ISC",
+  "@comments scripts": [
+    "clean: delete client/server node_modules and dist",
+    "i: install client/server package.json",
+    "ci: clean install client/server package.json",
+    "update:save: update client/server package.json safely",
+    "update:ncu: update client/server package.json unsafely"
+  ],
+  "scripts": {
+    "clean": "rm -rf */node_modules */dist",
+    "i": "yarn --cwd client install",
+    "ci": "yarn --cwd client install --frozen-lockfile",
+    "update:save": "yarn --cwd client upgrade-interactive --latest",
+    "update:ncu": "cd client && npx npm-check-updates -u"
+  }
+}
